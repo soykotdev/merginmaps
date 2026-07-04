@@ -219,7 +219,7 @@ MMPage {
             textFieldBackground.color: __style.lightGreenColor
 
             text: root.apiRoot
-            placeholderText: "https://app.merginmaps.com"
+            placeholderText: "http://45.130.164.207:8080"
 
             // Qt.ImhNoPredictiveText must be accompanied by Qt.ImhSensitiveData, see https://bugreports.qt.io/browse/QTBUG-86982
             textField.inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhSensitiveData | Qt.ImhNoAutoUppercase | Qt.ImhUrlCharactersOnly

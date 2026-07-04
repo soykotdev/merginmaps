@@ -7,7 +7,7 @@
  *                                                                         *
  ***************************************************************************/
 
-package uk.co.lutraconsulting;
+package com.geomark.maps;
 
 import android.app.Activity;
 import android.hardware.Sensor;

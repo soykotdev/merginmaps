@@ -54,7 +54,7 @@ AndroidTrackingBackend::~AndroidTrackingBackend()
 
   // stop the foreground service
   auto activity = QJniObject( QNativeInterface::QAndroidApplication::context() );
-  QAndroidIntent serviceIntent( activity.object(), "uk/co/lutraconsulting/PositionTrackingService" );
+  QAndroidIntent serviceIntent( activity.object(), "com/geomark/maps/PositionTrackingService" );
 
   activity.callMethod<jboolean>(
     "stopService",
@@ -200,10 +200,10 @@ void AndroidTrackingBackend::setupForegroundUpdates()
   }
 
   auto activity = QJniObject( QNativeInterface::QAndroidApplication::context() );
-  QAndroidIntent serviceIntent( activity.object(), "uk/co/lutraconsulting/PositionTrackingService" );
+  QAndroidIntent serviceIntent( activity.object(), "com/geomark/maps/PositionTrackingService" );
 
-  serviceIntent.putExtra( QStringLiteral( "uk.co.lutraconsulting.tracking.distanceInterval" ), mDistanceFilter );
-  serviceIntent.putExtra( QStringLiteral( "uk.co.lutraconsulting.tracking.timeInterval" ), mUpdateInterval );
+  serviceIntent.putExtra( QStringLiteral( "com.geomark.maps.tracking.distanceInterval" ), mDistanceFilter );
+  serviceIntent.putExtra( QStringLiteral( "com.geomark.maps.tracking.timeInterval" ), mUpdateInterval );
 
   QJniObject result = activity.callObjectMethod(
                         "startService",

@@ -7,7 +7,7 @@
  *                                                                         *
  ***************************************************************************/
 
-package uk.co.lutraconsulting;
+package com.geomark.maps;
 
 import android.os.Bundle;
 import androidx.exifinterface.media.ExifInterface;

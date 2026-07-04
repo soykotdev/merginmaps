@@ -7,7 +7,7 @@
  *                                                                         *
  ***************************************************************************/
 
-package uk.co.lutraconsulting;
+package com.geomark.maps;
 
 import android.util.Log;
 import android.os.Build;
@@ -26,13 +26,13 @@ public class PositionTrackingBroadcastMiddleware {
 
     private static final String TAG = "PositionTrackingBroadcastMiddleware";
 
-    public static final String TRACKING_POSITION_UPDATE_ACTION = "uk.co.lutraconsulting.tracking.position";
+    public static final String TRACKING_POSITION_UPDATE_ACTION = "com.geomark.maps.tracking.position";
 
-    public static final String TRACKING_ALIVE_STATUS_ACTION = "uk.co.lutraconsulting.tracking.alive";
-    public static final String TRACKING_ALIVE_STATUS_TAG = "uk.co.lutraconsulting.tracking.alive.status";
+    public static final String TRACKING_ALIVE_STATUS_ACTION = "com.geomark.maps.tracking.alive";
+    public static final String TRACKING_ALIVE_STATUS_TAG = "com.geomark.maps.tracking.alive.status";
 
-    public static final String TRACKING_STATUS_MESSAGE_ACTION = "uk.co.lutraconsulting.tracking.status";
-    public static final String TRACKING_STATUS_MESSAGE_TAG = "uk.co.lutraconsulting.tracking.status.message";
+    public static final String TRACKING_STATUS_MESSAGE_ACTION = "com.geomark.maps.tracking.status";
+    public static final String TRACKING_STATUS_MESSAGE_TAG = "com.geomark.maps.tracking.status.message";
 
     public PositionTrackingBroadcastMiddleware() {
 

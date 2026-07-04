@@ -271,7 +271,7 @@ bool CoreUtils::isAuthConfigFile( const QString filePath )
 
 bool CoreUtils::isValidName( const QString &name )
 {
-  static QRegularExpression reForbiddenmNames( R"([@#$%^&*\(\)\{\}\[\]\\\/\|\+=<>~\?:;,`\'\"]|^[\s^\.].*$|^CON$|^PRN$|^AUX$|^NUL$|^COM\d$|^LPT\d|^support$|^helpdesk$|^merginmaps$|^lutraconsulting$|^mergin$|^lutra$|^input$|^sales$|^admin$)", QRegularExpression::CaseInsensitiveOption );
+  static QRegularExpression reForbiddenmNames( R"([@#$%^&*\(\)\{\}\[\]\\\/\|\+=<>~\?:;,`\'\"]|^[\s^\.].*$|^CON$|^PRN$|^AUX$|^NUL$|^COM\d$|^LPT\d|^support$|^helpdesk$|^merginmaps$|^lutraconsulting$|^mergin$|^lutra$|^input$|^sales$|^admin$|^geomark$)", QRegularExpression::CaseInsensitiveOption );
   QRegularExpressionMatch matchForbiddenNames = reForbiddenmNames.match( name );
   return !matchForbiddenNames.hasMatch();
 }

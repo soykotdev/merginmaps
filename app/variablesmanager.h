@@ -20,7 +20,7 @@
 class MerginApi;
 
 /*
- * The class sets global and project variables related to Mergin Maps.
+ * The class sets global and project variables related to Geomark Maps.
  */
 class VariablesManager : public QObject
 {

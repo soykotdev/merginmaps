@@ -36,13 +36,13 @@
     <application 
         android:name="org.qtproject.qt.android.bindings.QtApplication"
         android:hardwareAccelerated="true"
-        android:label="Mergin Maps"
+        android:label="Geomark Maps"
         android:allowBackup="true"
         android:fullBackupOnly="false"
         android:icon="@mipmap/ic_appicon"
         android:roundIcon="@mipmap/ic_appicon_round" >
         <activity
-            android:name="uk.co.lutraconsulting.MMActivity"
+            android:name="com.geomark.maps.MMActivity"
             android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density"
             android:launchMode="singleTop"
             android:screenOrientation="unspecified"
@@ -79,9 +79,9 @@
 
         <!-- Activity Android native camera -->
         <activity
-            android:name="uk.co.lutraconsulting.CameraActivity"
-            android:label="Mergin Maps"
-            android:parentActivityName="uk.co.lutraconsulting.MMActivity"
+            android:name="com.geomark.maps.CameraActivity"
+            android:label="Geomark Maps"
+            android:parentActivityName="com.geomark.maps.MMActivity"
             android:configChanges="screenLayout|orientation|screenSize"
             >
              <meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --" />
@@ -89,7 +89,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="uk.co.lutraconsulting.fileprovider"
+            android:authorities="com.geomark.maps.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true"
             >

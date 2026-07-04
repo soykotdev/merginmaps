@@ -17,10 +17,10 @@
 #include <QNetworkReply>
 #include <QSysInfo>
 
-const QString helpRoot = QStringLiteral( "https://merginmaps.com/docs" );
-const QString helpDeskMail = QStringLiteral( "support@merginmaps.com" );
-const QString mmWeb = QStringLiteral( "https://merginmaps.com" );
-const QString changelogRss = QStringLiteral( "https://wishlist.merginmaps.com/rss/changelog.xml" );
+const QString helpRoot = QStringLiteral( "https://geomark.com.bd/docs" ); // TODO: placeholder, confirm real Geomark docs URL
+const QString helpDeskMail = QStringLiteral( "support@geomark.com.bd" ); // TODO: placeholder, confirm real Geomark support email
+const QString mmWeb = QStringLiteral( "https://geomark.com.bd" ); // TODO: placeholder, confirm real Geomark website
+const QString changelogRss = QStringLiteral( "https://wishlist.merginmaps.com/rss/changelog.xml" ); // left pointing upstream: Geomark has no changelog feed of its own yet
 
 const QString utmTagHelp = QStringLiteral( "?utm_source=input-help&utm_medium=help&utm_campaign=input" );
 const QString utmTagSubscription = QStringLiteral( "?utm_source=input-subs&utm_medium=subs&utm_campaign=input" );
@@ -216,7 +216,7 @@ QString InputHelp::fullLog( const bool isHtml ) const
 QVector<QString> InputHelp::logHeader( const bool isHtml ) const
 {
   QVector<QString> retLines;
-  retLines.push_back( QStringLiteral( "Mergin Maps App: %1 - %2 (%3)" ).arg( CoreUtils::appVersion(), InputUtils::appPlatform(), CoreUtils::appVersionCode() ) );
+  retLines.push_back( QStringLiteral( "Geomark Maps App: %1 - %2 (%3)" ).arg( CoreUtils::appVersion(), InputUtils::appPlatform(), CoreUtils::appVersionCode() ) );
   retLines.push_back( QStringLiteral( "Device UUID: %1" ).arg( CoreUtils::deviceUuid() ) );
   retLines.push_back( QStringLiteral( "Data Dir: %1" ).arg( InputUtils::appDataDir() ) );
   retLines.push_back( QStringLiteral( "System: %1" ).arg( QSysInfo::prettyProductName() ) );
@@ -234,7 +234,7 @@ QVector<QString> InputHelp::logHeader( const bool isHtml ) const
   }
   else
   {
-    retLines.push_back( QStringLiteral( "%1Mergin User Profile not available. To include it, open you Profile Page in Mergin Maps%2" ).arg( isHtml ? "<b>" : "", isHtml ? "</b>" : "" ) );
+    retLines.push_back( QStringLiteral( "%1Mergin User Profile not available. To include it, open you Profile Page in Geomark Maps%2" ).arg( isHtml ? "<b>" : "", isHtml ? "</b>" : "" ) );
   }
   retLines.push_back( QStringLiteral( "------------------------------------------" ) );
   retLines.push_back( QStringLiteral( "Screen Info:" ) );

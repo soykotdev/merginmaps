@@ -43,7 +43,7 @@ android {
      * Changing them manually might break the compilation!
      *******************************************************/
 
-    namespace 'uk.co.lutraconsulting'
+    namespace 'com.geomark.maps'
     compileSdkVersion androidCompileSdkVersion
     buildToolsVersion androidBuildToolsVersion
     ndkVersion = androidNdkVersion

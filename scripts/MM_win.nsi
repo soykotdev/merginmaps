@@ -1,9 +1,9 @@
-!define APPNAME "Mergin Maps"
+!define APPNAME "Geomark Maps"
 !define COMPANYNAME "Lutra Consulting Ltd."
 !define DESCRIPTION "Survey made easy"
-!define HELPURL "https://merginmaps.com/docs"
+!define HELPURL "https://geomark.com.bd/docs"
 !define UPDATEURL "https://github.com/MerginMaps/mobile/releases"
-!define ABOUTURL "https://merginmaps.com"
+!define ABOUTURL "https://geomark.com.bd"
  
 RequestExecutionLevel admin ;Require admin rights on NT6+ (When UAC is turned on)
  

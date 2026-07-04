@@ -364,15 +364,15 @@ class MMStyle: public QObject
     QFont p6() const {return fontFactory( 12, false );}
     QFont p7() const {return fontFactory( 10, false );}
 
-    QColor grassColor() const {return QColor::fromString( "#73D19C" );}
-    QColor forestColor() const {return QColor::fromString( "#004C45" );}
+    QColor grassColor() const {return QColor::fromString( "#F57C00" );}
+    QColor forestColor() const {return QColor::fromString( "#1B2A4A" );}
     QColor nightColor() const {return QColor::fromString( "#12181F" );}
     QColor polarColor() const {return QColor::fromString( "#FFFFFF" );}
     QColor transparentColor() const {return QColor::fromString( "transparent" );}
 
     QColor lightGreenColor() const {return QColor::fromString( "#EFF5F3" );}
-    QColor mediumGreenColor() const {return QColor::fromString( "#B7CDC4" );}
-    QColor darkGreenColor() const {return QColor::fromString( "#6E9991" );}
+    QColor mediumGreenColor() const {return QColor::fromString( "#CFD4ED" );}
+    QColor darkGreenColor() const {return QColor::fromString( "#959FD6" );}
     QColor greyColor() const {return QColor::fromString( "#E2E2E2" );}
     QColor darkGreyColor() const {return QColor::fromString( "#41464C" );}
     QColor mediumGreyColor() const {return QColor::fromString( "#A0A3A5" );}

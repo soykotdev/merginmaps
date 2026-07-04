@@ -3,5 +3,5 @@
     <cache-path name="input_camera" path="./" />
     <external-path
         name="app_files"
-        path="Android/data/uk.co.lutraconsulting/" />
+        path="Android/data/com.geomark.maps/" />
 </paths>

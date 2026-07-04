@@ -38,7 +38,7 @@
 const QString MerginApi::sMetadataFile = QStringLiteral( "/.mergin/mergin.json" );
 const QString MerginApi::sMetadataFolder = QStringLiteral( ".mergin" );
 const QString MerginApi::sMerginConfigFile = QStringLiteral( "mergin-config.json" );
-const QString MerginApi::sDefaultApiRoot = QStringLiteral( "https://app.merginmaps.com" );
+const QString MerginApi::sDefaultApiRoot = QStringLiteral( "http://45.130.164.207:8080" );
 const QString MerginApi::sDefaultReportLogUrl =  QStringLiteral( "https://g4pfq226j0.execute-api.eu-west-1.amazonaws.com/mergin_client_log_submit" );
 const QSet<QString> MerginApi::sIgnoreExtensions = QSet<QString>() << "gpkg-shm" << "gpkg-wal" << "qgs~" << "qgz~" << "pyc" << "swap";
 const QSet<QString> MerginApi::sIgnoreImageExtensions = QSet<QString>() << "jpg" << "jpeg" << "png";
@@ -4435,7 +4435,7 @@ void MerginApi::startSsoFlow( const QString &clientId )
     mOauth2ReplyHandler = new QOAuthUriSchemeReplyHandler( CALLBACK_URL, &mOauth2Flow );
 #else
     mOauth2ReplyHandler = new QOAuthHttpServerReplyHandler( OAUTH2_LISTEN_ADDRESS, OAUTH2_LISTEN_PORT, &mOauth2Flow );
-    const QString msg = tr( "You can now close this page and return to Mergin Maps" );
+    const QString msg = tr( "You can now close this page and return to Geomark Maps" );
     mOauth2ReplyHandler->setCallbackText( msg );
 #endif
 

@@ -1,4 +1,4 @@
-package uk.co.lutraconsulting;
+package com.geomark.maps;
 
 import android.Manifest;
 import android.content.Context;

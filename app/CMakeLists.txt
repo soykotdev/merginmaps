@@ -392,7 +392,7 @@ if (MACOS)
     MerginMaps
     PROPERTIES MACOSX_BUNDLE TRUE
                MACOSX_RPATH TRUE
-               MACOSX_BUNDLE_GUI_IDENTIFIER LutraConsultingLtd.Input
+               MACOSX_BUNDLE_GUI_IDENTIFIER com.geomark.maps
                MACOSX_BUNDLE_INFO_PLIST
                ${CMAKE_SOURCE_DIR}/cmake_templates/macOsInfo.plist.in
                MACOSX_BUNDLE_SHORT_VERSION_STRING ${MM_VERSION_CODE}
@@ -448,10 +448,10 @@ if (IOS)
     PROPERTIES MACOSX_BUNDLE TRUE
                MACOSX_BUNDLE_INFO_PLIST
                ${CMAKE_SOURCE_DIR}/cmake_templates/iOSInfo.plist.in
-               MACOSX_BUNDLE_GUI_IDENTIFIER "LutraConsultingLtd.Input"
+               MACOSX_BUNDLE_GUI_IDENTIFIER "com.geomark.maps"
                MACOSX_BUNDLE_SHORT_VERSION_STRING ${MM_VERSION}
                MACOSX_BUNDLE_BUNDLE_VERSION ${MM_VERSION_CODE}
-               XCODE_ATTRIBUTE_DEVELOPMENT_TEAM "79QMH2QRAH"
+               XCODE_ATTRIBUTE_DEVELOPMENT_TEAM "TODO_GEOMARK_APPLE_TEAM_ID"
                XCODE_ATTRIBUTE_ASSETCATALOG_COMPILER_APPICON_NAME "AppIcon"
                XCODE_ATTRIBUTE_CODE_SIGN_ENTITLEMENTS "${ENTITLEMENTS_FILE_IN_BUILD}"
   )
@@ -462,9 +462,9 @@ if (IOS)
     set_target_properties(
       MerginMaps
       PROPERTIES XCODE_ATTRIBUTE_PROVISIONING_PROFILE_SPECIFIER
-                 "LutraConsultingLtd.Input.AppStore"
+                 "TODO_GEOMARK_PROVISIONING_PROFILE"
                  XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY
-                 "Apple Distribution: LUTRA CONSULTING LIMITED (79QMH2QRAH)"
+                 "TODO: Apple Distribution: GEOMARK LIMITED (TEAM_ID)"
                  XCODE_ATTRIBUTE_CODE_SIGN_STYLE "Manual"
     )
     message(STATUS "Using manual code sign with production certificate")

@@ -24,7 +24,7 @@ if [[ -n ${API_KEY_ID:-} ]]; then
 	codesign --force --options runtime --sign "Developer ID Application" --deep --keychain "$KEYCHAIN_NAME" "$APP_PATH"
 fi
 
-create-dmg --volname "Mergin Maps Mobile App Installer" \
+create-dmg --volname "Geomark Maps Mobile App Installer" \
 	--hide-extension "MerginMaps.app" \
 	--window-pos 200 120 \
 	--window-size 512 320 \

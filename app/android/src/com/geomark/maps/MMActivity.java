@@ -7,7 +7,7 @@
  *                                                                         *
  ***************************************************************************/
 
-package uk.co.lutraconsulting;
+package com.geomark.maps;
 
 import org.qtproject.qt.android.bindings.QtActivity;
 
@@ -52,7 +52,7 @@ import androidx.core.splashscreen.SplashScreen;
 
 public class MMActivity extends QtActivity
 {
-  private static final String TAG = "Mergin Maps Activity";
+  private static final String TAG = "Geomark Maps Activity";
   private static final int MEDIA_CODE = 101;
   private boolean keepSplashScreenVisible = true;
   private String localTargetPath = null;
@@ -160,7 +160,7 @@ public class MMActivity extends QtActivity
 
     try 
     {
-      Uri fileUri = FileProvider.getUriForFile( this, "uk.co.lutraconsulting.fileprovider", file );
+      Uri fileUri = FileProvider.getUriForFile( this, "com.geomark.maps.fileprovider", file );
 
       showFileIntent.setData( fileUri );
 

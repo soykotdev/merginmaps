@@ -95,9 +95,9 @@ bool AndroidTrackingBroadcast::unregisterBroadcastPrivate()
 void AndroidTrackingBroadcast::sendAliveRequestAsyncPrivate()
 {
   auto activity = QJniObject( QNativeInterface::QAndroidApplication::context() );
-  QAndroidIntent serviceIntent( activity.object(), "uk/co/lutraconsulting/PositionTrackingService" );
+  QAndroidIntent serviceIntent( activity.object(), "com/geomark/maps/PositionTrackingService" );
 
-  serviceIntent.putExtra( QStringLiteral( "uk.co.lutraconsulting.tracking.alive" ), true );
+  serviceIntent.putExtra( QStringLiteral( "com.geomark.maps.tracking.alive" ), true );
 
   QJniObject result = activity.callObjectMethod(
                         "startService",
